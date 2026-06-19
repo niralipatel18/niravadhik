@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Noto+Serif+Gujarati:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+/* ── નિર્વાધિક — vibrant poppy palette ──────────────── */
+:root {
+  --paper: #fbf6ec;
+  --paper-deep: #f3ead8;
+  --ink: #1a1410;
+  --ink-soft: #5a4f44;
+
+  --poppy: #e8462b;
+  --poppy-deep: #c2331c;
+  --saffron: #f6a01a;
+  --indigo: #3a4ea8;
+  --teal: #128a7d;
+  --magenta: #c2317f;
+  --gold: #b8862f;
+
+  --line: #e3d6bd;
+  --line-soft: #efe6d2;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-poppy: var(--poppy);
+  --color-poppy-deep: var(--poppy-deep);
+  --color-saffron: var(--saffron);
+  --color-indigo: var(--indigo);
+  --color-teal: var(--teal);
+  --color-magenta: var(--magenta);
+  --color-gold: var(--gold);
+  --color-line: var(--line);
+  --font-display: "Playfair Display", "Noto Serif Gujarati", serif;
+  --font-guj: "Noto Serif Gujarati", serif;
+  --font-body: "Mukta", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--saffron); color: var(--ink); }
+
+.font-guj     { font-family: var(--font-guj); }
+.font-display { font-family: var(--font-display); }
+.font-mono    { font-family: var(--font-mono); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* per-strand color theming */
+[data-accent="poppy"]   { --accent: var(--poppy);   --accent-deep: var(--poppy-deep); }
+[data-accent="indigo"]  { --accent: var(--indigo);  --accent-deep: #2a3a86; }
+[data-accent="teal"]    { --accent: var(--teal);    --accent-deep: #0d6b60; }
+[data-accent="saffron"] { --accent: var(--saffron); --accent-deep: #d9850c; }
+[data-accent="magenta"] { --accent: var(--magenta); --accent-deep: #a02568; }
+
+.rule { height: 0; border: none; border-top: 2px solid var(--line); position: relative; }
+.rule::after { content: ""; position: absolute; left: 0; width: 64px; top: -2px; border-top: 2px solid var(--poppy); }
+
+.ornament { display: flex; align-items: center; gap: 0.9rem; }
+.ornament::before, .ornament::after {
+  content: ""; flex: 1; height: 2px;
+  background: linear-gradient(to right, transparent, var(--saffron), var(--poppy));
+}
+.ornament::before { background: linear-gradient(to left, transparent, var(--saffron), var(--poppy)); }
+
+.link-grow {
+  background-image: linear-gradient(var(--accent, var(--poppy)), var(--accent, var(--poppy)));
+  background-size: 0% 2px; background-position: 0 100%; background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+.link-grow:hover { background-size: 100% 2px; }
+
+/* ── Cards ── */
+.card {
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -20px rgba(26,20,16,0.42), 0 0 0 1.5px color-mix(in srgb, var(--accent, var(--poppy)) 35%, transparent);
+}
+
+/* Strand hero card (big cards on homepage) */
+.strand-card {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.strand-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 32px 60px -24px rgba(26,20,16,0.5);
+}
+
+/* chip badge */
+.chip {
+  display: inline-block;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent, var(--poppy));
+}
+
+/* ── Animations ── */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 0.75s cubic-bezier(0.2,0.7,0.2,1) both; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+.float { animation: float 5s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, var(--poppy), var(--saffron), var(--magenta), var(--saffron), var(--poppy));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(0.9); opacity: 0.8; }
+  70%  { transform: scale(1.15); opacity: 0; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+.pulse-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--accent, var(--poppy));
+  animation: pulse-ring 2s cubic-bezier(0.4,0,0.6,1) infinite;
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+/* photo strip scroll */
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.strip-track { animation: scroll-left 28s linear infinite; }
+.strip-track:hover { animation-play-state: paused; }
+
+/* image zoom on hover */
+.img-zoom { transition: transform 0.6s cubic-bezier(0.2,0.8,0.2,1); }
+.group:hover .img-zoom { transform: scale(1.08); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise, .float, .shimmer-text, .strip-track, .animated-gradient { animation: none; }
+  .shimmer-text { background: var(--poppy); -webkit-text-fill-color: var(--poppy); }
+  html { scroll-behavior: auto; }
+}
