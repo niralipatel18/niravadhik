@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.8fr_1fr_1fr]">
           <div>
             <div className="font-guj text-3xl font-800 text-white">
-              નિર્વાધિક
+              નિરવધિક
             </div>
             <p className="mt-3 max-w-xs font-guj text-sm leading-relaxed text-paper/70">
               {tagline}
@@ -80,7 +80,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-paper/10 pt-6">
           <p className="font-mono text-[0.68rem] text-paper/40">
-            © {new Date().getFullYear()} નિર્વાધિક · Nirvadhik — Gandhinagar
+            © {new Date().getFullYear()} નિરવધિક · Nirvadhik — Gandhinagar
           </p>
         </div>
       </div>

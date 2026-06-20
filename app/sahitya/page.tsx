@@ -1,7 +1,7 @@
 import { SectionHead, PieceCard } from "../components/Cards";
 import { sahitya } from "../data/content";
 
-export const metadata = { title: "સાહિત્ય · Literature — નિર્વાધિક" };
+export const metadata = { title: "સાહિત્ય · Literature — નિરવધિક" };
 
 export default function SahityaPage() {
   return (

@@ -1,7 +1,7 @@
 import { SectionHead, PieceCard } from "../components/Cards";
 import { cinema } from "../data/content";
 
-export const metadata = { title: "સિનેમા · Cinema — નિર્વાધિક" };
+export const metadata = { title: "સિનેમા · Cinema — નિરવધિક" };
 
 export default function CinemaPage() {
   return (

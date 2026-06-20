@@ -1,6 +1,6 @@
 import { tagline, taglineEn, magazine } from "../data/content";
 
-export const metadata = { title: "વિશે · About — નિર્વાધિક" };
+export const metadata = { title: "વિશે · About — નિરવધિક" };
 
 export default function AboutPage() {
   return (
@@ -13,7 +13,7 @@ export default function AboutPage() {
         }}
       >
         <div className="mx-auto max-w-2xl px-5 py-16 sm:px-8 sm:py-20">
-          <p className="eyebrow text-poppy">નિર્વાધિક વિશે · About</p>
+          <p className="eyebrow text-poppy">નિરવધિક વિશે · About</p>
           <h1 className="mt-4 font-guj text-4xl font-800 leading-tight sm:text-5xl">
             જગતથી જુદા બનવાની પહેલ
           </h1>
@@ -29,9 +29,9 @@ export default function AboutPage() {
         </div>
 
         <div className="space-y-6 font-guj text-lg leading-[1.9] text-ink-soft">
-          <p>{tagline} — આ વાક્ય નિર્વાધિકનો આત્મા છે.</p>
+          <p>{tagline} — આ વાક્ય નિરવધિકનો આત્મા છે.</p>
           <p>
-            નિર્વાધિક ગાંધીનગરથી ચાલતો એક સાંસ્કૃતિક મંચ છે, જ્યાં સાહિત્ય,
+            નિરવધિક ગાંધીનગરથી ચાલતો એક સાંસ્કૃતિક મંચ છે, જ્યાં સાહિત્ય,
             સિનેમા અને સંગીત — ત્રણેય કલાસ્વરૂપો સમાન આદર સાથે વસે છે.
           </p>
           <p>

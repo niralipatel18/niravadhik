@@ -23,7 +23,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
         <Link href="/" className="flex items-baseline gap-2 group">
           <span className="font-guj text-2xl font-800 tracking-tight text-ink transition-colors group-hover:text-poppy">
-            નિર્વાધિક
+            નિરવધિક
           </span>
           <span className="hidden font-mono text-[0.58rem] font-600 uppercase tracking-[0.22em] text-poppy sm:inline">
             Nirvadhik

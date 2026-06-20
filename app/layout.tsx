@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "નિર્વાધિક — સાહિત્ય | સિનેમા | સંગીત",
+  title: "નિરવધિક — સાહિત્ય | સિનેમા | સંગીત",
   description:
-    "નિર્વાધિક: ગુજરાતી સાહિત્ય, સિનેમા અને સંગીતનો સંગમ. ગાંધીનગર. 'કોઈ કલા સ્વરૂપે જગતથી જુદા બનો.'",
+    "નિરવધિક: ગુજરાતી સાહિત્ય, સિનેમા અને સંગીતનો સંગમ. ગાંધીનગર. 'કોઈ કલા સ્વરૂપે જગતથી જુદા બનો.'",
 };
 
 export default function RootLayout({

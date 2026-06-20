@@ -84,7 +84,7 @@ export default function Home() {
             </span>
           </div>
           <p className="mt-2 font-guj text-ink-soft">
-            ગાંધીનગરમાં નિર્વાધિક દ્વારા આયોજિત ફિલ્મ-સ્ક્રીનિંગ, સ્વર-સ&#x200D;ંધ્યા અને સામ&#x200D;યિ&#x200D;ક.
+            ગાંધીનગરમાં નિરવધિક દ્વારા આયોજિત ફિલ્મ-સ્ક્રીનિંગ, સ્વર-સ&#x200D;ંધ્યા અને સામ&#x200D;યિ&#x200D;ક.
           </p>
           <p className="mt-0.5 text-sm italic text-ink-soft/70">
             Screenings, music events & more — all from Gandhinagar.
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="pointer-events-none absolute right-0 top-0 h-full w-64 opacity-10" style={{ background: "radial-gradient(circle at right, #f6a01a, transparent 70%)" }} />
 
           <div className="flex-1 pl-4">
-            <p className="eyebrow text-saffron">નિર્વાધિક સામયિક · Magazine</p>
+            <p className="eyebrow text-saffron">નિરવધિક સામયિક · Magazine</p>
             <h3 className="mt-2 font-guj text-3xl font-800 text-white sm:text-4xl">
               {magazine.name}
             </h3>
@@ -202,7 +202,7 @@ export default function Home() {
               backgroundSize: "36px 36px",
             }}
           />
-          <p className="eyebrow relative text-white/70">નિર્વાધિક · Nirvadhik</p>
+          <p className="eyebrow relative text-white/70">નિરવધિક · Nirvadhik</p>
           <blockquote className="relative mx-auto mt-4 max-w-2xl font-guj text-2xl font-700 leading-relaxed text-white drop-shadow-lg sm:text-3xl">
             'કોઈ કલા સ્વરૂપે જગતથી જુદા બનો'
           </blockquote>
@@ -260,7 +260,7 @@ export default function Home() {
           href="/about"
           className="mt-6 inline-block rounded-full bg-poppy px-8 py-3 font-mono text-xs font-600 uppercase tracking-[0.18em] text-white shadow-lg transition-all duration-300 hover:bg-poppy-deep hover:shadow-xl"
         >
-          નિર્વાધિક વિશે · About Us →
+          નિરવધિક વિશે · About Us →
         </Link>
       </section>
     </>

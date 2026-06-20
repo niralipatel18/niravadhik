@@ -1,7 +1,7 @@
 import { SectionHead, PieceCard } from "../components/Cards";
 import { sangeet } from "../data/content";
 
-export const metadata = { title: "સંગીત · Music — નિર્વાધિક" };
+export const metadata = { title: "સંગીત · Music — નિરવધિક" };
 
 export default function SangeetPage() {
   return (

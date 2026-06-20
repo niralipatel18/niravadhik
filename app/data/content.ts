@@ -1,4 +1,4 @@
-// નિર્વાધિક — સાહિત્ય | સિનેમા | સંગીત
+// નિરવધિક — સાહિત્ય | સિનેમા | સંગીત
 // Bilingual content store
 
 export type Quote = {
@@ -40,7 +40,7 @@ export const place = "ગાંધીનગર";
 export const placeEn = "Gandhinagar";
 
 export const magazine = {
-  name: "નિર્વાધિક સામયિક",
+  name: "નિરવધિક સામયિક",
   nameEn: "Nirvadhik Magazine",
   frequency: "પ્રતિ પખવાડિયે",
   frequencyEn: "Every fortnight · twice a month",
@@ -50,13 +50,13 @@ export const magazine = {
 
 export const quotes: Quote[] = [
   { text: "જ્યાં ન પહોંચે રવિ, ત્યાં પહોંચે કવિ.", author: "લોકોક્તિ" },
-  { text: "શબ્દ એ જ સૃષ્ટિ છે, બાકી બધું તેની છાયા.", author: "નિર્વાધિક" },
+  { text: "શબ્દ એ જ સૃષ્ટિ છે, બાકી બધું તેની છાયા.", author: "નિરવધિક" },
   { text: "કળા એ આયનો નથી, કળા એ હથોડી છે.", author: "બ્રેખ્ત (અનુ.)", source: "નાટ્યવિચાર" },
-  { text: "મૌન પણ એક રાગ છે — જે સાંભળે તેને સંભળાય.", author: "નિર્વાધિક" },
-  { text: "સ્વર અને અક્ષર — આ બે પાંખે ઊડે છે આત્મા.", author: "નિર્વાધિક" },
-  { text: "સિનેમા એ સ્વપ્ન છે જે આંખ ખુલ્લી રાખીને જોવાય.", author: "નિર્વાધિક" },
+  { text: "મૌન પણ એક રાગ છે — જે સાંભળે તેને સંભળાય.", author: "નિરવધિક" },
+  { text: "સ્વર અને અક્ષર — આ બે પાંખે ઊડે છે આત્મા.", author: "નિરવધિક" },
+  { text: "સિનેમા એ સ્વપ્ન છે જે આંખ ખુલ્લી રાખીને જોવાય.", author: "નિરવધિક" },
   { text: "ભૂલ ભૂ ઉપર ઊગ ઊઠ, ઝાડ ભૂ — ભૂ ન ભૂલ ખાય.", author: "ઉમાશંકર જોશી" },
-  { text: "ગઝલ: જ્યાં ઘા અને ગાન એકી સ્વરે ઊઠે.", author: "નિર્વાધિક" },
+  { text: "ગઝલ: જ્યાં ઘા અને ગાન એકી સ્વરે ઊઠે.", author: "નિરવધિક" },
 ];
 
 const IMG = {
@@ -163,7 +163,7 @@ export const cinema: Piece[] = [
     slug: "rockstar-screening",
     title: "રૉકસ્ટાર — સ્ક્રીનિંગ",
     titleEn: "Rockstar — Screening",
-    author: "નિર્વાધિક ચલચિત્ર",
+    author: "નિરવધિક ચલચિત્ર",
     kind: "સ્ક્રીનિંગ",
     kindEn: "Screening",
     excerpt: "ઇમ્તિઆઝ અલીની આ ફિલ્મ માત્ર સ્ક્રીન પર નહિ — છાતીમાં ઊઘડે.",
@@ -178,14 +178,14 @@ export const cinema: Piece[] = [
       "A.R. રહેમાનના સ્વરે 'નદ્દાન પરિઁદે' ગાયું ત્યારે",
       "ઓરડામાં ઊભેલા બધા ચૂપ થઈ ગયા.",
       "",
-      "નિર્વાધિક ચલચિત્ર — ગાંધીનગર, ૨૦૨૪",
+      "નિરવધિક ચલચિત્ર — ગાંધીનગર, ૨૦૨૪",
     ],
   },
   {
     slug: "laila-majnu-screening",
     title: "લૈલા મજ્નૂ — સ્ક્રીનિંગ",
     titleEn: "Laila Majnu — Screening",
-    author: "નિર્વાધિક ચલચિત્ર",
+    author: "નિરવધિક ચલચિત્ર",
     kind: "સ્ક્રીનિંગ",
     kindEn: "Screening",
     excerpt: "ઇશ્કની ભૂખ — એ ભૂખ ન ઓળઘોળ ન ઠારે, ઠારી ઠારી ઠારે.",
@@ -201,14 +201,14 @@ export const cinema: Piece[] = [
       "અવિનાશ તિવારી અને ત્રિપ્તિ ડિઁઇ —",
       "બે આત્માઓ, એક ઝૂરાપો.",
       "",
-      "નિર્વાધિક ચલચિત્ર — ગાંધીનગર, ૨૦૨૪",
+      "નિરવધિક ચલચિત્ર — ગાંધીનગર, ૨૦૨૪",
     ],
   },
   {
     slug: "reva-screening",
     title: "રેવા — સ્ક્રીનિંગ",
     titleEn: "Reva — Screening",
-    author: "નિર્વાધિક ચલચિત્ર",
+    author: "નિરવધિક ચલચિત્ર",
     kind: "સ્ક્રીનિંગ",
     kindEn: "Screening",
     excerpt: "નર્મદા ફક્ત નદી નથી — ગુજરાતની ઓળખ, આ ફિલ્મ તેની સાક્ષી.",
@@ -223,14 +223,14 @@ export const cinema: Piece[] = [
       "મનુ દેસાઈ · ભૂમિ ત્રિવેદી — ગુજરાતી સિનેમાના ઉત્કૃષ્ટ ચહેરા.",
       "",
       "Nirvadhik ના ઇતિહાસ ની પ્રથમ ગુજરાતી ફિલ્મ-સ્ક્રીનિંગ.",
-      "નિર્વાધિક ચલચિત્ર — ગાંધીનગર, ૨૦૨૪",
+      "નિરવધિક ચલચિત્ર — ગાંધીનગર, ૨૦૨૪",
     ],
   },
   {
     slug: "frame-ane-maun",
     title: "ફ્રેમ અને મૌન",
     titleEn: "Frame & Silence",
-    author: "નિર્વાધિક ટિપ્પણ",
+    author: "નિરવધિક ટિપ્પણ",
     kind: "નિબંધ",
     kindEn: "Essay",
     excerpt: "દૃશ્યમાં જે દેખાતું નથી, એ જ ઘણીવાર વાર્તા હોય છે.",
@@ -249,7 +249,7 @@ export const sangeet: Piece[] = [
     slug: "sufi-swar-sandhya",
     title: "સૂફી સ્વર-સંધ્યા",
     titleEn: "Sufi Music Evening",
-    author: "નિર્વાધિક સ્વર",
+    author: "નિરવધિક સ્વર",
     kind: "સ્વર-સંધ્યા",
     kindEn: "Live Event",
     excerpt: "ઇશ્ક, ઈબાદત અને ઊર્મિ — સૂફી સ્વર-સંધ્યા, ગાંધીનગર.",
@@ -267,14 +267,14 @@ export const sangeet: Piece[] = [
       "સ્ટેજ પર ઊઠ્યો સ્વર, ને ઓરડો ખોવાઈ ગયો —",
       "ફક્ત ભાવ રહ્યો.",
       "",
-      "નિર્વાધિક, ગાંધીનગર.",
+      "નિરવધિક, ગાંધીનગર.",
     ],
   },
   {
     slug: "raag-ne-ole",
     title: "રાગને ઓળે",
     titleEn: "In the Shade of a Raag",
-    author: "નિર્વાધિક ટિપ્પણ",
+    author: "નિરવધિક ટિપ્પણ",
     kind: "આસ્વાદ",
     kindEn: "Appreciation",
     excerpt: "સૂર શબ્દ વગર પણ આખી લાગણી પહોંચાડી શકે છે.",
@@ -290,7 +290,7 @@ export const sangeet: Piece[] = [
     slug: "lok-dhun",
     title: "લોકધૂન",
     titleEn: "Folk Melody",
-    author: "નિર્વાધિક ટિપ્પણ",
+    author: "નિરવધિક ટિપ્પણ",
     kind: "નોંધ",
     kindEn: "Note",
     excerpt: "ગુજરાતની માટીમાંથી ઊઠતી ધૂનો, જે પેઢી દર પેઢી વહી છે.",
@@ -305,7 +305,7 @@ export const sangeet: Piece[] = [
     slug: "taal-ni-vaat",
     title: "તાલની વાત",
     titleEn: "Speaking of Rhythm",
-    author: "નિર્વાધિક ટિપ્પણ",
+    author: "નિરવધિક ટિપ્પણ",
     kind: "નોંધ",
     kindEn: "Note",
     excerpt: "તાલ: ધ્વનિ અને મૌનનો સૌથી ઊઘડ સંવાદ.",

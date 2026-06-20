@@ -63,7 +63,7 @@ export default function Reader({
 
         <div className="rule mt-14" />
         <p className="mt-6 font-guj text-sm text-ink-soft">
-          નિર્વાધિક · {piece.author}
+          નિરવધિક · {piece.author}
         </p>
       </div>
     </article>
