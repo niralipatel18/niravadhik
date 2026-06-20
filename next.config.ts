@@ -6,11 +6,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
-  turbopack: {
-    resolveAlias: {
-      canvas: { browser: "./empty.js" },
-    },
-  },
+  turbopack: {},
 };
 
 export default nextConfig;
