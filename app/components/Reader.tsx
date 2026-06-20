@@ -9,11 +9,10 @@ export default function Reader({
 }) {
   return (
     <article data-accent={accent}>
-      {/* image banner */}
       <div className="relative h-[42vh] min-h-[280px] w-full overflow-hidden">
         <Image
           src={piece.image}
-          alt={piece.titleEn || piece.title}
+          alt={piece.title}
           fill
           priority
           sizes="100vw"
@@ -27,20 +26,17 @@ export default function Reader({
           }}
         />
         <div className="absolute inset-x-0 bottom-0 mx-auto max-w-2xl px-5 pb-6 sm:px-8">
-          <span className="chip">{piece.kindEn}</span>
+          <span className="chip">{piece.kind}</span>
           <h1 className="mt-3 font-guj text-4xl font-800 leading-tight text-ink drop-shadow-sm sm:text-5xl">
             {piece.title}
           </h1>
-          {piece.titleEn && (
-            <p className="mt-1 text-base italic text-ink-soft">{piece.titleEn}</p>
-          )}
         </div>
       </div>
 
       <div className="mx-auto max-w-2xl px-5 py-12 sm:px-8">
         <Link
           href={backHref}
-          className="link-grow font-mono text-xs font-600 uppercase tracking-[0.16em]"
+          className="link-grow font-guj text-xs font-600"
           style={{ color: "var(--accent)" }}
         >
           ← {backLabel}

@@ -21,7 +21,7 @@ export default function PdfMagazineGrid({ issues }: { issues: MagazineIssue[] })
         return (
           <div key={issue.issue}>
             <div className="bg-[#525659]">
-              <PdfViewer src={encodeURI(issue.pdf)} title={issue.titleEn ?? issue.title} />
+              <PdfViewer src={encodeURI(issue.pdf)} title={issue.title} />
             </div>
           </div>
         );
