@@ -49,19 +49,19 @@ export default function Hero() {
           <SangeetArt className="w-16 rise sm:w-24" />
         </div>
 
-        <p className="eyebrow rise text-poppy" style={{ animationDelay: "60ms" }}>
-          આજનું અવતરણ · Quote of the day
+        <p className="rise text-poppy text-md " style={{ animationDelay: "60ms" }}>
+          આજનો શેર
         </p>
 
         <blockquote
           className="rise mx-auto mt-6 max-w-3xl font-guj text-3xl font-600 leading-[1.5] text-ink sm:text-[2.75rem] sm:leading-[1.4]"
-          style={{ animationDelay: "140ms" }}
+          style={{ animationDelay: "140ms", whiteSpace: "pre-line" }}
         >
           {q.text}
         </blockquote>
 
         <p
-          className="rise mt-5 font-mono text-xs font-600 uppercase tracking-[0.22em] text-poppy-deep"
+          className="rise mt-5 font-mono text-s font-600 uppercase tracking-[0.22em] text-poppy-deep"
           style={{ animationDelay: "240ms" }}
         >
           — {q.author}{q.source ? ` · ${q.source}` : ""}

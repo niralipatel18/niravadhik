@@ -4,10 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const nav = [
-  { label: "સાહિત્ય", en: "Literature", href: "/sahitya", accent: "#e8462b" },
-  { label: "સિનેમા",  en: "Cinema",     href: "/cinema",  accent: "#3a4ea8" },
-  { label: "સંગીત",  en: "Music",      href: "/sangeet", accent: "#128a7d" },
-  { label: "વિશે",   en: "About",      href: "/about",   accent: "#c2317f" },
+  { label: "સાહિત્ય",  en: "Literature", href: "/sahitya",  accent: "#e8462b" },
+  { label: "સિનેમા",   en: "Cinema",     href: "/cinema",   accent: "#3a4ea8" },
+  { label: "સંગીત",   en: "Music",      href: "/sangeet",  accent: "#128a7d" },
+  { label: "કલાનિધિ", en: "Magazine",   href: "/magazine", accent: "#f6a01a" },
+  { label: "વિશે",    en: "About",      href: "/about",    accent: "#c2317f" },
 ];
 
 export default function Header() {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Hero from "./components/Hero";
 import { SectionHead, PieceCard } from "./components/Cards";
 import { SahityaArt, CinemaArt, SangeetArt } from "./components/Art";
-import { strands, initiatives, magazine } from "./data/content";
+import { strands, initiatives, magazine, magazineIssues } from "./data/content";
 
 const ART = { sahitya: SahityaArt, cinema: CinemaArt, sangeet: SangeetArt };
 
@@ -172,16 +172,22 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-3 sm:items-end">
             <div className="text-center sm:text-right">
-              <div className="font-guj text-5xl font-800 text-saffron">૨ ×</div>
-              <div className="font-guj text-sm text-white/60">મહિને · per month</div>
+              <div className="font-guj text-5xl font-800 text-saffron">{magazineIssues.length}</div>
+              <div className="font-guj text-sm text-white/60">અંક પ્રકાશિત · Issues</div>
             </div>
+            <Link
+              href="/magazine"
+              className="inline-block rounded-full bg-saffron px-6 py-2.5 font-mono text-xs font-700 uppercase tracking-[0.16em] text-ink transition-all hover:bg-white"
+            >
+              બધા અંક · View Issues →
+            </Link>
             <a
               href="https://instagram.com/nirvadhik"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full bg-saffron px-6 py-2.5 font-mono text-xs font-700 uppercase tracking-[0.16em] text-ink transition-all hover:bg-white"
+              className="font-mono text-xs font-600 uppercase tracking-[0.16em] text-saffron/70 hover:text-saffron transition-colors"
             >
-              Follow · @nirvadhik →
+              @nirvadhik →
             </a>
           </div>
         </div>

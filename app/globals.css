@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Noto+Serif+Gujarati:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Mukta+Vaani:wght@400;500;600;700;800&family=Noto+Serif+Gujarati:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 /* ── નિરવધિક — vibrant poppy palette ──────────────── */
@@ -34,7 +34,8 @@
   --color-gold: var(--gold);
   --color-line: var(--line);
   --font-display: "Playfair Display", "Noto Serif Gujarati", serif;
-  --font-guj: "Noto Serif Gujarati", serif;
+  --font-guj: "Mukta Vaani", "Noto Serif Gujarati", serif;
+  --font-vaani: "Mukta Vaani", "Noto Serif Gujarati", serif;
   --font-body: "Mukta", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
@@ -52,6 +53,7 @@ body {
 ::selection { background: var(--saffron); color: var(--ink); }
 
 .font-guj     { font-family: var(--font-guj); }
+.font-vaani   { font-family: var(--font-vaani); }
 .font-display { font-family: var(--font-display); }
 .font-mono    { font-family: var(--font-mono); }
 
