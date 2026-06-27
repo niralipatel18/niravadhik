@@ -104,7 +104,6 @@ export default function Home() {
           <div className="pointer-events-none absolute right-0 top-0 h-full w-64 opacity-10" style={{ background: "radial-gradient(circle at right, #f6a01a, transparent 70%)" }} />
 
           <div className="flex-1 pl-4">
-            <p className="eyebrow text-saffron">નિરવધિક સામયિક</p>
             <h3 className="mt-2 font-guj text-3xl font-800 text-white sm:text-4xl">{magazine.name}</h3>
             <p className="mt-1 font-mono text-xs font-600 uppercase tracking-[0.2em] text-saffron/80">{magazine.frequency}</p>
             <p className="mt-3 max-w-lg font-guj text-base leading-relaxed text-white/70">{magazine.tagline}</p>
@@ -113,14 +112,11 @@ export default function Home() {
           <div className="flex flex-col items-center gap-3 sm:items-end">
             <div className="text-center sm:text-right">
               <div className="font-guj text-5xl font-800 text-saffron">{magazineIssues.length}</div>
-              <div className="font-guj text-sm text-white/60">અંક પ્રકાશિત</div>
+              <div className="font-guj text-sm text-white/60">કુલ પ્રકાશિત અંક</div>
             </div>
             <Link href="/magazine" className="inline-block rounded-full bg-saffron px-6 py-2.5 font-guj text-xs font-700 text-ink transition-all hover:bg-white">
-              બધા અંક →
+              બધા અંક વાંચવા ક્લિક કરો
             </Link>
-            <a href="https://instagram.com/nirvadhik" target="_blank" rel="noopener noreferrer" className="font-guj text-xs text-saffron/70 hover:text-saffron transition-colors">
-              @nirvadhik →
-            </a>
           </div>
         </div>
       </section>
@@ -166,16 +162,6 @@ export default function Home() {
         </section>
       ))}
 
-      {/* ── Bottom CTA ── */}
-      <section className="mx-auto mt-24 max-w-2xl px-5 pb-4 text-center sm:px-8">
-        <div className="ornament mb-8 mx-auto max-w-[14rem]">
-          <span className="font-guj text-saffron text-lg">✦</span>
-        </div>
-        <p className="font-guj text-2xl font-700 text-ink">ગાંધીનગરથી — કળાની ભૂમિ</p>
-        <Link href="/about" className="mt-6 inline-block rounded-full bg-poppy px-8 py-3 font-guj text-xs font-600 text-white shadow-lg transition-all duration-300 hover:bg-poppy-deep hover:shadow-xl">
-          નિરવધિક વિશે →
-        </Link>
-      </section>
     </>
   );
 }

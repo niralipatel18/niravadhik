@@ -56,12 +56,12 @@ export const place = "ગાંધીનગર";
 export const placeEn = "Gandhinagar";
 
 export const magazine = {
-  name: "નિરવધિક સામયિક",
-  nameEn: "Nirvadhik Magazine",
-  frequency: "પ્રતિ પખવાડિયે",
-  frequencyEn: "Every fortnight · twice a month",
-  tagline: "સાહિત્ય · સિનેમા · સંગીત — ત્રણ ધારામાં, એક પ્રવાહ.",
-  taglineEn: "Three arts, one current.",
+  name: "કલાનિધિ સામયિક",
+  nameEn: "Kalanidhi Magazine",
+  frequency: "નિઃશુલ્ક દ્વિમાસિક ઈ-સામયિક",
+  frequencyEn: "Free bimonthly e-magazine",
+  tagline: "'કલાનિધિ' એ દર બીજા મહિનાના પ્રથમ રવિવારે પ્રકાશિત થતું નિઃશુલ્ક E-સામયિક છે. જેમાં સાહિત્ય, સિનેમા, સંગીત તથા અન્ય કલાને લગતા લેખ અને માહિતી રજૂ થાય છે.",
+  taglineEn: "A free bimonthly e-magazine published on the first Sunday of every alternate month, featuring articles on literature, cinema, music and other arts.",
 };
 
 export const magazineIssues: MagazineIssue[] = [
@@ -136,21 +136,11 @@ const IMG = {
 
 export const sahitya: Piece[] = [
   {
-    slug: "ek-sanjh", title: "એક સાંજ", titleEn: "One Evening",
-    author: "અજ્ઞાત", kind: "અછાંદસ", kindEn: "Free Verse",
-    excerpt: "સાંજ ઢળી અને શહેર પોતાના પડછાયા સંકેલવા લાગ્યું…",
-    image: IMG.ink, year: "2024",
-    body: [
-      "સાંજ ઢળી",
-      "અને શહેર પોતાના પડછાયા સંકેલવા લાગ્યું.",
-      "દીવા થયા — પણ અંધારું ગયું નહીં,",
-      "એ તો ખાલી જગ્યા બદલી ગયું.",
-      "",
-      "હું બારી પાસે બેઠો રહ્યો,",
-      "શબ્દની રાહ જોતો —",
-      "જે આવ્યો નહીં, ને છતાં",
-      "આખી રાત સંગાથે રહ્યો.",
-    ],
+    slug: "majlis-che-mirza", title: "મજલિસ છે મરીઝ", titleEn: "Majlis Che Mirza",
+    author: "મરીઝ", kind: "ગઝલ", kindEn: "Ghazal",
+    excerpt: "",
+    image: IMG.ghazal, year: "2024",
+    body: [],
   },
   {
     slug: "matti", title: "માટી", titleEn: "Clay",

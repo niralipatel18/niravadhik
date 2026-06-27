@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { quotes, tagline, place } from "../data/content";
+import { quotes } from "../data/content";
 import { SahityaArt, CinemaArt, SangeetArt } from "./Art";
 
 const STRIP_IMAGES = [
@@ -64,29 +64,6 @@ export default function Hero() {
           — {q.author}{q.source ? ` · ${q.source}` : ""}
         </p>
 
-        <div className="ornament mx-auto mt-8 max-w-md rise" style={{ animationDelay: "320ms" }}>
-          <span className="font-guj text-lg text-saffron">✦</span>
-        </div>
-
-        <p className="rise mx-auto mt-6 max-w-xl font-guj text-lg leading-relaxed text-ink-soft" style={{ animationDelay: "380ms" }}>
-          {tagline}
-        </p>
-        <p className="rise mx-auto mt-1.5 max-w-xl font-guj text-sm text-ink-soft/75" style={{ animationDelay: "430ms" }}>
-          {place}
-        </p>
-
-        <div className="rise mx-auto mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10" style={{ animationDelay: "500ms" }}>
-          {[
-            { n: "૩", label: "ફિલ્મ સ્ક્રીનિંગ" },
-            { n: "૧", label: "સૂફી સ્વર-સંધ્યા" },
-            { n: "૨×", label: "માસિક સામયિક" },
-          ].map(({ n, label }) => (
-            <div key={label} className="text-center">
-              <div className="shimmer-text font-guj text-4xl font-800 sm:text-5xl">{n}</div>
-              <div className="mt-0.5 font-guj text-xs text-ink-soft">{label}</div>
-            </div>
-          ))}
-        </div>
       </div>
 
       <div className="relative mt-8 overflow-hidden" style={{ maskImage: "linear-gradient(to right, transparent, black 8%, black 92%, transparent)" }}>
